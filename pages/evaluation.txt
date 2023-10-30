@@ -1,0 +1,83 @@
+Certainly, let's start by evaluating the six most important professional skills often considered crucial in the workplace:
+
+1. Communication Skills
+2. Technical Proficiency
+3. Problem-Solving and Critical Thinking
+4. Teamwork and Collaboration
+5. Leadership Skills
+6. Time Management and Organization
+
+I'll ask a series of questions for each category. Please provide detailed answers to help me better assess your skills.
+
+### Communication Skills
+1. How do you handle misunderstandings with colleagues? Can you share an example?
+
+If there was a misunderstanding with a colleague, first I would start giving context about the situation. Then I would ask for my colleagues version and listening carefully. 
+After listening, I would tell him / her what is happening or happened after the misunderstanding, and how that affected me, people and or companies. 
+
+2. How do you explain complex technical concepts to non-technical team members or clients?
+I would lower the level of detail, and find a way to explain the concepts using analogous concepts. A classic example would be how a PC works in terms of processors, hard disks, and ram.
+The computer is someone working on a desk. The processor speed could be compared to how fast is the person working on a desk. The ram could be the same as how big is the surface of the desk, 
+when putting the documents on. the hard-disk is the same as the cabinet where the documents folders are stored. 
+If there is not enough ram we need to open and save the documents every time we use them, because we can not work with on a small desk with too many documents.  
+
+### Technical Proficiency
+3. What is the most complex project you have worked on? What technologies did you use?
+Working for Termatrac, I have created an instance of EC2 to run a NextJS project. the database was an AWS Aurora Postgres database, accessed by an AWS API Gateway.
+The credentials were controled by AWS Cognito. The front end of the project was React.
+
+4. Can you describe a time when you had to learn a new technology or tool on the job?
+I have learnt new tools and technologies all the time. When working for QIS packaging, I learnt Microsoft Power BI.
+When worked for Termatrac, many AWS services. Working for GeoAire, I learned JSF, Primefaces, Linux, and others.
+
+### Problem-Solving and Critical Thinking
+5. Describe a challenging problem you've faced at work and the steps you took to resolve it.
+when working for GeoAire, I was asked how to show points in a map on the web application. 
+I evaluated many OpenSource software and services. The problem with open source software is most of the time there is no immediate support.
+The openmap feature required too much disk space to save the prerendering tiles or runtime cost to render it in real time.
+At the end, after trying many different open source software solutions we found that Google maps has a threshold of requests per day (1000). 
+Which it was by far above the usage of the web application.
+
+6. How do you approach making difficult decisions when there are multiple stakeholders involved?
+I request a reasonable time for research. Usually a week or two if it is something parallel to the daily tasks.
+After that, I request a meeting to inform the pros and cons of each current option. 
+If the current options are not acceptable, I ask for more time, to explore more options or delegate the request to another colleague or externalize it.
+
+### Teamwork and Collaboration
+7. Can you share an experience where you had to collaborate with a difficult team member?
+I had a problem with a team member that was not working with enough dedication. I talked first to him about the problem and waited for his reaction.
+He improved for a few months, but after that his performance was bad again. I had to escalate the problem to the team leader.
+Sadly he was fired, for repeating the same cycle of good and then bad performance again.
+
+8. How do you contribute to a team project to ensure its success?
+Finish my tasks first. If there is a problem in the team, solve it first. 
+If there is someone late, dedicate a reasonable amount of time to help that person.
+Unexpected emergencies such as sickness or accidents are everyone problem and we must put extra effort.
+Miscalculation from the team leader is acceptable as long as it is not something that happens often, and the team needs to be empathic.
+Having leisure time as a team is also mandatory for the synergy.
+
+### Leadership Skills
+9. Have you ever had to take the lead on a project? What were the results?
+Yes, the team did its best and we produce properly.
+Sadly the sales team promised too much and we lost clients. 
+
+10. How do you handle conflict within your team?
+listening to each member of the team first, asking for their versions, one by one. Get a conclusion and request a meeting to solve the conflict between the people involved.
+If the meeting was not enough, offer more time for cooling down bad thoughts, and request another meeting.
+If the problem persist and there is no solution, make drastic decisions.
+
+### Time Management and Organization
+11. How do you prioritize your tasks when you have multiple projects to handle?
+Evaluate the impact of finishing, canceling or postponing each project, and possible scenarios.
+What is the impact of talking to the stakeholders about the impact of the decisions. Will they approve the decisions or the reputation of the team/company/leaders will be affected by these meetings.
+Considering the economic impact of the decisions.
+
+12. Describe a situation where you had to meet tight deadlines. How did you ensure timely completion?
+If the projects reward worthed the extra effort, I used my free time.
+There was a project requesting a customer counting system when the customers entering the stores. 
+I bought a few cameras and payed extra for the blackbox software instead of making it myself.
+I saved time, but the system sample cost me extra money. As a pilot project.
+I sacrificed the customized source code for having a fully integrated system already. 
+However, they wanted the source code more than the service itself, and the project was cancelled.
+
+Please answer these questions, and based on your responses, I'll provide an evaluation.
