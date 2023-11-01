@@ -56,12 +56,12 @@ export default function ColorSwitcher() {
                         </ul>
                     </li>
                 </ul>
-                <div className="config-title">
+                {/* <div className="config-title">
                     Colors :
                 </div>
                 <ul className="styles">
-
-                    <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+                    <li>
+                        <a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
                         <div className="blue"></div>
                     </a>
                     </li>
@@ -93,7 +93,7 @@ export default function ColorSwitcher() {
                         <div className="red"></div>
                     </a>
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </div >
     </>

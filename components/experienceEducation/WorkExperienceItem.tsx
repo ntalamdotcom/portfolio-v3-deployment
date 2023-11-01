@@ -1,7 +1,7 @@
 export default function WorkExperienceItem({
     companyName,
     roleName, workPeriod,
-    dutiesList, companyUrl,detailsURL
+    dutiesList, companyUrl, detailsURL
 }) {
 
     const renderList = []
@@ -21,7 +21,11 @@ export default function WorkExperienceItem({
             <ul className="work-responsibility">
                 {renderList}
             </ul>
-            <a target="_new" href={detailsURL} >Read More</a>
-        </div>
+            <a
+                style={{
+                    color: 'red'
+                }}
+                target="_new" href={detailsURL} > Read More</a>
+        </div >
     </>
 }

@@ -1,13 +1,10 @@
-// import { Head } from "next/document";
 
-import Head from "next/head";
-import Link from "next/link";
 import { useEffect } from "react";
 import HeadPortfolio from "../components/HeadPortfolio";
 import ScriptsPortfolio from "../components/ScriptsPortfolio";
-import SocialIcons from "../components/SocialIcons";
 import EducationItem from "../components/experienceEducation/EducationItem";
 import WorkExperienceItem from "../components/experienceEducation/WorkExperienceItem";
+import NextPageButton from "../components/NextPageButton";
 
 export default function ExperienceEducation() {
 
@@ -30,12 +27,7 @@ export default function ExperienceEducation() {
                     data-wow-delay="0.2s">Education</h3>
                   <div className="mh-education-deatils">
                     {/* <!-- Education Institutes--> */}
-                    <EducationItem
-                      linkInstitution={"https://ucn.cl"}
-                      qualificationName={"Computer Science"}
-                      institutionName={"Catholic Univerty of the North (Chile)"}
-                      datesStudy={"2010"}
-                      certificationDescription={"Bachelor degree of Computer Science, including project management and programming"} />
+
                     <EducationItem
                       linkInstitution={"https://insightacademy.edu.au"}
                       qualificationName={"Business Diploma"}
@@ -48,7 +40,12 @@ export default function ExperienceEducation() {
                       institutionName={"SACE Melbourne"}
                       datesStudy={"2018"}
                       certificationDescription={"English course and IELTS preparation"} />
-
+                    <EducationItem
+                      linkInstitution={"https://ucn.cl"}
+                      qualificationName={"Computer Science"}
+                      institutionName={"Catholic University of the North (Chile)"}
+                      datesStudy={"2010"}
+                      certificationDescription={"Bachelor degree of Computer Science, including project management and programming"} />
                   </div>
                 </div>
               </div>
@@ -64,38 +61,65 @@ export default function ExperienceEducation() {
                       dutiesList={[
                         "Multiple Data Sources integration",
                         "Front-End development",
-                      ]} 
-                      detailsURL={undefined} />
+                      ]}
+                      detailsURL={"https://ntalam.com/commercial-projects/#termatrac"} />
+                    <WorkExperienceItem
+                      companyName={"Chinchilla Reactor"}
+                      roleName={"Full-stack Developer"}
+                      workPeriod={"Mar 2018"}
+                      companyUrl={"https://ntalam.com"}
+                      dutiesList={[
+                        "Team Leader",
+                        "Prototyping",
+                        "Software Development",
+                        "Cloud Administration",
+                      ]}
+                      detailsURL={"https://ntalam.com/commercial-projects/#chinchilla-reactor"} />
+                    <WorkExperienceItem
+                      companyName={"Opticas Schilling (Chile)"}
+                      roleName={"Analyst Programmer"}
+                      workPeriod={"Aug 2013 - Oct 2015"}
+                      companyUrl={"https://schilling.cl"}
+                      dutiesList={[
+                        "Solutions research",
+                        "Prototyping",
+                        "Web development",
 
-                    <div className="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                      data-wow-delay="0.6s">
-                      <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
-                      <div className="mh-eduyear">2005-2008</div>
-                      <span>Responsibility :</span>
-                      <ul className="work-responsibility">
-                        <li><i className="fa fa-circle"></i>Validate CSS</li>
-                        <li><i className="fa fa-circle"></i>Project Management</li>
-                      </ul>
-                    </div>
-                    {/* <!-- Education Institutes--> */}
-                    <div className="mh-work-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                      data-wow-delay="0.7s">
-                      <h4>Art & Multimedia From <a href="#">Oxford University</a></h4>
-                      <div className="mh-eduyear">2005-2008</div>
-                      <span>Responsibility :</span>
-                      <ul className="work-responsibility">
-                        <li><i className="fa fa-circle"></i>Validate CSS</li>
-                        <li><i className="fa fa-circle"></i>Project Management</li>
-                      </ul>
-                    </div>
+                      ]}
+                      detailsURL={"https://ntalam.com/commercial-projects/#opticas-schilling"} />
                   </div>
                 </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div className="container">
+            <div className="row text-center">
+              <div
+                className="col-12 col-md-6 col-sm-12 wow fadeInUp"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.2s">
+                <NextPageButton
+                  linkTo={"https://ntalam.com/commercial-projects"}
+                  buttonLabel={"More Details"}
+                />
+              </div>
+              <div
+                className="col-md-6 col-sm-12 col-12 wow fadeInUp"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.2s">
+                <NextPageButton
+                  linkTo={"/portfolio"}
+                  buttonLabel={"Portfolio"}
+                />
               </div>
             </div>
           </div>
         </div>
+
       </section>
-      <ScriptsPortfolio></ScriptsPortfolio>
+      <ScriptsPortfolio />
     </>
   )
 }
