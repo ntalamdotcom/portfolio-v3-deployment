@@ -100,13 +100,13 @@ export default function HeadPortfolio({
     });
     return <>
         <Head>
-            <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
             {/* <!-- Font Awesome --> */}
-            <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css" />
+            {/* <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css" /> */}
             {/* <!-- Bootstrap CSS --> */}
-            <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" />
+            {/* <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" /> */}
             {/* <!-- Animate CSS--> */}
-            <link rel="stylesheet" href="assets/plugins/css/animate.css" />
+            {/* <link rel="stylesheet" href="assets/plugins/css/animate.css" /> */}
             {/* <!-- Owl Carousel CSS--> */}
             <link rel="stylesheet" href="assets/plugins/css/owl.css" />
             {/* <!-- Fancybox--> */}
