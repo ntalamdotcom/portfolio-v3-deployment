@@ -81,7 +81,7 @@ export default function About() {
 
 
   const itemsList = []
-  var itemCount=0;
+  var itemCount = 0;
   AvailableTechnologies.forEach(ele => {
     itemCount++
     itemsList.push(
@@ -124,6 +124,9 @@ export default function About() {
                     </ul>
                   </div>
                   <a
+                    style={{
+                      margin: '10px',
+                    }}
                     target="_new"
                     href="https://ntalam.com/contact-ntalam/"
                     className="btn btn-fill wow fadeInUp"

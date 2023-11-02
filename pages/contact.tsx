@@ -31,8 +31,8 @@ export const ContactWaysList = [
 export default function Home() {
 
   useEffect(() => {
-    document.body.className = "dark-vertion black-bg";
-    eval("setActiveStyleSheet('red')")
+    // document.body.className = "dark-vertion black-bg";
+    // eval("setActiveStyleSheet('red')")
   });
   const listItems = []
 

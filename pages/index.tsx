@@ -40,7 +40,7 @@ export default function Home() {
               <div className="col-sm-6">
                 <div className="mh-header-info">
                   <div className="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-                    <span>Hello I`&apos;`m</span>
+                    <span>Hello I&apos;m</span>
                   </div>
 
                   <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">

@@ -7,7 +7,7 @@ import NextPageButton from "../components/NextPageButton";
 export default function Home() {
 
   useEffect(() => {
-    document.body.className = "dark-vertion black-bg";
+    // document.body.className = "dark-vertion black-bg";
     // eval("setActiveStyleSheet('red')")
   });
 
