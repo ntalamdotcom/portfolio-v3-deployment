@@ -104,49 +104,30 @@ export default function HeadPortfolio({
         )
     });
     return <>
-        <Head>
-            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-            {/* <!-- Font Awesome --> */}
-            {/* <link rel="stylesheet" href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css" /> */}
-            {/* <!-- Bootstrap CSS --> */}
-            {/* <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" /> */}
-            {/* <!-- Animate CSS--> */}
-            {/* <link rel="stylesheet" href="assets/plugins/css/animate.css" /> */}
-            {/* <!-- Owl Carousel CSS--> */}
-            <link rel="stylesheet" href="assets/plugins/css/owl.css" />
-            {/* <!-- Fancybox--> */}
-            <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css" />
+        {/* <Head> */}
 
-            {/* <!-- Custom CSS--> */}
-            <link rel="stylesheet" href="assets/css/styles.css" />
-            <link rel="stylesheet" href="assets/css/responsive.css" />
+        <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header">
+            <div className="overlay"></div>
+            <div className="container">
+                <div className="row">
+                    <nav className="navbar navbar-expand-lg mh-nav nav-btn">
+                        <button
+                            className="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon icon"></span>
+                        </button>
 
-            {/* <!-- Colors --> */}
-            <link rel="alternate stylesheet" href="assets/css/colors/blue.css" title="blue" />
-            <link rel="stylesheet" href="assets/css/colors/defauld.css" title="defauld" />
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav mr-auto ml-auto">
+                                {menuList}
 
-            <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav" id="mh-header">
-                <div className="overlay"></div>
-                <div className="container">
-                    <div className="row">
-                        <nav className="navbar navbar-expand-lg mh-nav nav-btn">
-                            <button
-                                className="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon icon"></span>
-                            </button>
-
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav mr-auto ml-auto">
-                                    {menuList}
-
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </header>
-        </Head>
+            </div>
+        </header>
+        {/* </Head> */}
     </>
 }

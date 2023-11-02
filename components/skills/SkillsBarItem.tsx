@@ -20,14 +20,15 @@ export default function SkillsBarItem({
                     viewBox="0 0 100 100">
                     <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
                         stroke="rgba(255, 255, 255, 1.0)"
-                        stroke-width="5"
-                        fill-opacity="0"
+                        strokeWidth="5"
+                        fillOpacity="0"
                     // style={{ filter: "drop-shadow(0px 0px 3px red)", }}
                     >
                     </path>
                     <path d="M 50,50 m 0,-47.5 a 47.5,47.5 0 1 1 0,95 a 47.5,47.5 0 1 1 0,-95"
                         stroke="rgba(255, 255, 255, 1.0)"
-                        stroke-width="5" fill-opacity="0"
+                        strokeWidth="5" 
+                        fillOpacity="0"
                         style={{
                             strokeDasharray: "298.493, 298.493",
                             // filter: "drop-shadow(0 0 5px red);",

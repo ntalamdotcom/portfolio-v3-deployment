@@ -23,22 +23,12 @@ export default function ScriptsPortfolio() {
     <script src="assets/plugins/js/jquery.nav.js" />
     {/* <!-- Fancybox js-->/ */}
     <script src="assets/plugins/js/jquery.fancybox.min.js" />
-    {/* <!-- Map api -->
-    <script
-      src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"/>
-    <!-- isotope js--> */}
+
     <script src="assets/plugins/js/isotope.pkgd.js" />
     <script src="assets/plugins/js/packery-mode.pkgd.js" />
-    {/* <!-- Custom Scripts--> */}
-    {/* <script src="assets/js/map-init.js" /> */}
+
     <script src="assets/js/custom-scripts.js" />
 
-
-    {/* <!-- ****************
-    After neccessary customization/modification, Please minify
-    JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
-    **************** -->
-    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO --> */}
     <link rel="stylesheet" href="demo/demo.css" />
     <script src="demo/styleswitcher.js" />
     <script src="demo/demo.js" />
