@@ -16,21 +16,30 @@ export default function PortfolioItem({
     setModalImage,
     technologies,
     setModalTechIcons,
+    keyItem,
 }) {
     const itemsList = []
+    var techCount = 0
     technologies.forEach(ele => {
         AvailableTechnologies.forEach(eleAval => {
             if (eleAval.imageName === ele) {
+                techCount++
                 itemsList.push(
-                    <li>
-                        <img alt={ele.label}
+                    <li
+                        id={keyItem + techCount}
+                        key={keyItem + techCount}
+                    >
+                        <img
+                            id={'img-' + keyItem + techCount}
+                            key={'img-' + keyItem + techCount}
+                            alt={ele.label}
                             src={"assets/images/" + ele + "-64.png "} />
                     </li>
                 )
             }
         });
     });
-    
+
     return <>
         <div
             className={"grid-item col-md-4 col-sm-6 col-xs-12 " + categories}>

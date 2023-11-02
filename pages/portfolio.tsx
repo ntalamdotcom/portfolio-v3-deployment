@@ -71,7 +71,9 @@ export default function Portfolio() {
       description: "This is the adaptation of hama html jquery portfolio. I took it and remade it on Nextjs",
     },
   ]
+  var itemCount = 0
   items.forEach(ele => {
+    itemCount++
     listItems.push(<PortfolioItem
       imagePath={ele.imagePath}
       imageAlt={ele.imageAlt}
@@ -87,6 +89,7 @@ export default function Portfolio() {
       setModalImage={setModalImage}
       technologies={ele.technologies}
       setModalTechIcons={setModalTechIcons}
+      keyItem={"portfolio-item-" + itemCount}
     />)
   });
   const listCategories = []
@@ -102,9 +105,12 @@ export default function Portfolio() {
       filter: "digital-art",
     },
   ]
+  var itemCountCat = 0;
   categoriesItems.forEach(ele => {
+    itemCountCat++
     listCategories.push(
       <li
+        key={"cat-item-" + itemCountCat}
         onClick={() => {
           setCategorySelected(ele.category)
         }}
@@ -112,7 +118,9 @@ export default function Portfolio() {
         className="wow fadeInUp"
         data-wow-duration="0.8s"
         data-wow-delay="0.2s">
-        <span>{ele.name}</span>
+        <span
+        key={"span-item-" + itemCountCat}
+        >{ele.name}</span>
       </li>
     )
   });

@@ -72,13 +72,17 @@ export default function HeadPortfolio({
         },
     ]
     const menuList = []
+    var itemCount = 0
     navBar.forEach(ele => {
         var classDesc = "nav-item"
         if (selectedPageName && ele.name === selectedPageName) {
             classDesc += " active"
         }
+        itemCount++
         menuList.push(
-            <li className={classDesc}>
+            <li
+                key={"nav-item-" + itemCount}
+                className={classDesc}>
                 {/* {ele.target &&
                     <Link
                         target={ele.target}
@@ -89,6 +93,7 @@ export default function HeadPortfolio({
                 } */}
                 {/* {!ele.target && */}
                 <Link
+
                     href={ele.link}
                     className="nav-link"
                 >{ele.title}

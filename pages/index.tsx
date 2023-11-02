@@ -4,20 +4,22 @@ import HeadPortfolio from "../components/HeadPortfolio";
 import ScriptsPortfolio from "../components/ScriptsPortfolio";
 
 import { ContactWaysList } from "./contact";
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
 import NextPageButton from "../components/NextPageButton";
 
 export default function Home() {
 
   useEffect(() => {
-    document.body.className = "dark-vertion black-bg";
+    // document.body.className = "dark-vertion black-bg";
     // eval("setActiveStyleSheet('red')")
   });
 
   const itemsList = []
+  var itemCount = 0
   ContactWaysList.forEach((contact) => {
+    itemCount++
     itemsList.push(
-      <li>
+      <li key={"home-icon-" + itemCount}>
         <a
           href={contact.link}>
           <i className={"fa " + contact.iconName}>

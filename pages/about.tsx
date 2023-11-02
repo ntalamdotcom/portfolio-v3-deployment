@@ -81,9 +81,13 @@ export default function About() {
 
 
   const itemsList = []
+  var itemCount=0;
   AvailableTechnologies.forEach(ele => {
+    itemCount++
     itemsList.push(
-      <li>
+      <li
+        key={"home-icon-" + itemCount}
+      >
         <img alt={ele.label}
           src={"assets/images/" + ele.imageName + "-64.png "} />
       </li>

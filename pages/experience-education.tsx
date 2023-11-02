@@ -26,8 +26,7 @@ export default function ExperienceEducation() {
                     data-wow-duration="0.8s"
                     data-wow-delay="0.2s">Education</h3>
                   <div className="mh-education-deatils">
-                    {/* <!-- Education Institutes--> */}
-
+                   
                     <EducationItem
                       linkInstitution={"https://insightacademy.edu.au"}
                       qualificationName={"Business Diploma"}
@@ -90,7 +89,6 @@ export default function ExperienceEducation() {
                   </div>
                 </div>
               </div>
-
             </div>
 
           </div>
