@@ -10,8 +10,8 @@ import NextPageButton from "../components/NextPageButton";
 export default function Portfolio() {
 
   useEffect(() => {
-    document.body.className = "dark-vertion black-bg";
-    eval("setActiveStyleSheet('red')")
+    // document.body.className = "dark-vertion black-bg";
+    // eval("setActiveStyleSheet('red')")
     eval("portfolioInit()")
   });
 

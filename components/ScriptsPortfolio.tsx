@@ -1,7 +1,28 @@
 /* eslint-disable @next/next/no-sync-scripts */
 // import Script from "next/script";
 
+import { useEffect } from "react"
+
 export default function ScriptsPortfolio() {
+
+  useEffect(() => {
+    eval("setActiveStyleSheet('red')")
+    // if (typeof window !== "undefined") {
+    //   window.onload = () => {
+    //     setTimeout(() => {
+    //       eval("navigatorInit")
+    //       console.log("nScriptsPortfolio");
+    //     }, 2000);
+    //   };
+    // }
+  }, []);
+  // const refresh = () => {
+  //   setTimeout(() => {
+  //     eval("navigatorInit()")
+  //     console.log("refresh");
+  //   }, 2000);
+  // }
+
   return <>
 
     <script type="text/javascript" src="assets/plugins/js/jquery.min.js" />
@@ -126,5 +147,6 @@ export default function ScriptsPortfolio() {
           </ul>
         </div>
       </div> */}
+    {/* {refresh()} */}
   </>
 }

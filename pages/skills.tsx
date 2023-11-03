@@ -17,7 +17,7 @@ export default function Skills() {
       setShowProSkills(true)
       //     setIsAnimated(true);
     }
-    document.body.className = "dark-vertion black-bg";
+    // document.body.className = "dark-vertion black-bg";
     //   eval("setActiveStyleSheet('red')")
   }, []);
 

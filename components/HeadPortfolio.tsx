@@ -92,12 +92,13 @@ export default function HeadPortfolio({
                     </Link>
                 } */}
                 {/* {!ele.target && */}
-                <Link
-
+                {/* It doesnt work with Link */}
+                <a
+                    target="_self"
                     href={ele.link}
                     className="nav-link"
                 >{ele.title}
-                </Link>
+                </a>
                 {/* } */}
 
             </li >

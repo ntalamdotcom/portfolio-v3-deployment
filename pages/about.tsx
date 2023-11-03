@@ -74,9 +74,9 @@ export const AvailableTechnologies = [
 export default function About() {
 
   useEffect(() => {
-    document.body.className = "dark-vertion black-bg";
-    eval("setActiveStyleSheet('red')")
-  });
+    // document.body.className = "dark-vertion black-bg";
+    // eval("setActiveStyleSheet('red')")
+  }, []);
 
 
 
