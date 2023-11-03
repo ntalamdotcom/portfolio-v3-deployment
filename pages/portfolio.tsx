@@ -61,7 +61,7 @@ export default function Portfolio() {
       description: "I started a workshop and I am using this channel to practice and upload tutorials as a base for the lessons",
     },
     {
-      imagePath: "http://localhost:3000/assets/images/portfolio/portfoliov3.jpg",
+      imagePath: "assets/images/portfolio/portfoliov3.jpg",
       imageAlt: "Screenshot VSCode",
       title: "Jquery to Nextjs",
       subTitle: "A bootstrap exercise",
@@ -119,7 +119,7 @@ export default function Portfolio() {
         data-wow-duration="0.8s"
         data-wow-delay="0.2s">
         <span
-        key={"span-item-" + itemCountCat}
+          key={"span-item-" + itemCountCat}
         >{ele.name}</span>
       </li>
     )
