@@ -45,25 +45,26 @@ export default function Home() {
                 featuredImage={"https://ntalam.com/wp-content/uploads/2022/06/ntalam_gendoposecover-1024x576.jpg"} />
             </div>
           </div>
-        </div>
-        <div className="container">
-          <div className="row text-center">
-            <div
-              className="col-12 col-md-6 col-sm-12 wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s">
-            </div>
-            <div
-              className="col-md-6 col-sm-12 col-12 wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s">
-              <NextPageButton
-                linkTo={"/contact"}
-                buttonLabel={"Contact me"}
-              />
+          <div className="container">
+            <div className="row text-center">
+              <div
+                className="col-12 col-md-6 col-sm-12 wow fadeInUp"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.2s">
+              </div>
+              <div
+                className="col-md-6 col-sm-12 col-12 wow fadeInUp"
+                data-wow-duration="0.8s"
+                data-wow-delay="0.2s">
+                <NextPageButton
+                  linkTo={"/contact"}
+                  buttonLabel={"Contact me"}
+                />
+              </div>
             </div>
           </div>
         </div>
+
       </section>
       <ScriptsPortfolio></ScriptsPortfolio>
     </>
