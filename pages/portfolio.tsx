@@ -6,13 +6,18 @@ import { Box, Button } from "@mui/material";
 import PortfolioItem from "../components/PortfolioItem";
 import ScriptsPortfolio from "../components/ScriptsPortfolio";
 import NextPageButton from "../components/NextPageButton";
+import WpPortfolioV3 from "../components/WpPortfolioV3";
 
 export default function Portfolio() {
 
+  const [wpPagesList, setWpPagesList] = useState(undefined)
+  async function loadWPPages() {
+    const portfolioItem = await WpPortfolioV3()
+    console.log("portfolioItem portf: ", portfolioItem)
+  }
   useEffect(() => {
-    // document.body.className = "dark-vertion black-bg";
-    // eval("setActiveStyleSheet('red')")
     eval("portfolioInit()")
+    loadWPPages()
   });
 
   const [open, setOpen] = useState(false);
@@ -71,6 +76,7 @@ export default function Portfolio() {
       description: "This is the adaptation of hama html jquery portfolio. I took it and remade it on Nextjs",
     },
   ]
+
   var itemCount = 0
   items.forEach(ele => {
     itemCount++
@@ -253,3 +259,5 @@ export default function Portfolio() {
     </>
   )
 }
+
+

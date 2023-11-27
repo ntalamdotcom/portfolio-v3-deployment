@@ -27,8 +27,8 @@ class MyDocument extends Document {
 
                 </Head>
                 <body className="dark-vertion black-bg">
-                    <div class="section-loader">
-                        <div class="loader">
+                    <div className="section-loader">
+                        <div className="loader">
                             <div></div>
                             <div></div>
                         </div>

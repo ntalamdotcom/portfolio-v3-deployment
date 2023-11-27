@@ -21,6 +21,7 @@ export default function Home() {
     itemsList.push(
       <li key={"home-icon-" + itemCount}>
         <a
+          target="_new"
           href={contact.link}>
           <i className={"fa " + contact.iconName}>
             {/* {contact.label} */}
