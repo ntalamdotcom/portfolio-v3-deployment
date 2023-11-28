@@ -10,27 +10,6 @@ import WpPortfolioV3 from "../components/WpPortfolioV3";
 
 export default function Portfolio() {
 
-  const [wpPagesList, setWpPagesList] = useState(undefined)
-  async function loadWPPages() {
-    const portfolioItem = await WpPortfolioV3()
-    console.log("portfolioItem portf: ", portfolioItem)
-  }
-  useEffect(() => {
-    eval("portfolioInit()")
-    loadWPPages()
-  });
-
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const [modalTitle, setModalTitle] = useState<string>(null);
-  const [modalDescription, setModalDescription] = useState<string>(null);
-  const [modalLinkToProject, setModalLinkToProject] = useState<string>(null);
-  const [modalImage, setModalImage] = useState<string>(null);
-  const [modalTechsIcons, setModalTechIcons] = useState(null);
-  const [categorySelected, setCategorySelected] = useState<string>(null);
-
-
   const listItems = []
   const items = [
     {
@@ -77,6 +56,48 @@ export default function Portfolio() {
     },
   ]
 
+  const [wpPagesList, setWpPagesList] = useState(listItems)
+  const [loadedOnce, setLoadedOnce] = useState(false)
+  const loadWPPages = async () => {
+    console.log("loadWPPages............")
+    if (!loadedOnce) {
+      const portfolioItems = await WpPortfolioV3()
+      // console.log("portfolioItem portf: ", portfolioItem)
+      // const updatedList = createComponents(portfolioItems)
+      const itemsAdded = [...items, ...portfolioItems]
+      console.log("itemsAdded: ", itemsAdded)
+      const updatedList = createComponents(itemsAdded)
+      console.log("ONCE updating")
+      setWpPagesList(updatedList)
+      // setWpPagesList(oldList => [...oldList, ...updatedList])
+      setLoadedOnce(true)
+
+    } else {
+      console.log("not updating")
+    }
+    // eval("portfolioInit()")
+  }
+  useEffect(() => {
+    // eval("portfolioInit()")
+    //   // if (loadedOnce == false) {
+    //   //   
+    //   //   setLoadedOnce(true)
+    //   // }
+  }, [wpPagesList]);
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [modalTitle, setModalTitle] = useState<string>(null);
+  const [modalDescription, setModalDescription] = useState<string>(null);
+  const [modalLinkToProject, setModalLinkToProject] = useState<string>(null);
+  const [modalImage, setModalImage] = useState<string>(null);
+  const [modalTechsIcons, setModalTechIcons] = useState(null);
+  const [categorySelected, setCategorySelected] = useState<string>(null);
+
+
+
+
   var itemCount = 0
   items.forEach(ele => {
     itemCount++
@@ -110,6 +131,11 @@ export default function Portfolio() {
       category: "digital-art",
       filter: "digital-art",
     },
+    {
+      name: "PortfolioV3",
+      category: "portfoliov3",
+      filter: "portfoliov3",
+    },
   ]
   var itemCountCat = 0;
   categoriesItems.forEach(ele => {
@@ -139,6 +165,35 @@ export default function Portfolio() {
     boxShadow: 24,
     p: 4,
   };
+  // setWpPagesList(listItems)
+
+
+  function createComponents(items_p) {
+    const listItems_p = []
+    items_p.forEach(ele => {
+      itemCount++
+      listItems_p.push(<PortfolioItem
+        imagePath={ele.imagePath}
+        imageAlt={ele.imageAlt}
+        title={ele.title}
+        subTitle={ele.subTitle}
+        categories={ele.categories}
+        handleOpenfunction={handleOpen}
+        setModalTitle={setModalTitle}
+        setModalDescription={setModalDescription}
+        description={ele.description}
+        linkToProject={ele.linkToProject}
+        setModalLinkToProject={setModalLinkToProject}
+        setModalImage={setModalImage}
+        technologies={ele.technologies}
+        setModalTechIcons={setModalTechIcons}
+        keyItem={"portfolio-item-" + itemCount}
+      />)
+    });
+    return listItems_p
+  }
+  loadWPPages()
+  // eval("portfolioInit()")
   return (
     <>
       <HeadPortfolio selectedPageName={"portfolio"} />
@@ -151,7 +206,7 @@ export default function Portfolio() {
                 <h3>Recent Portfolio</h3>
               </div>
               <div className="part col-sm-12">
-                <div className="portfolio-nav col-sm-12" id="filter-button">
+                <div className="portfolio-nav col-sm-12" id="filter-button" style={{display:'none'}}>
                   <ul>
                     <li
                       onClick={() => {
@@ -178,7 +233,7 @@ export default function Portfolio() {
                   */}
                   <div className="portfolioContainer row">
                     {/* <div className=" row"> */}
-                    {listItems}
+                    {wpPagesList}
 
                   </div>
 

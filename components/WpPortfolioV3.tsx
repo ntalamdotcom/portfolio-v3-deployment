@@ -14,7 +14,7 @@ export default async function WpPortfolioV3() {
         }
         const data = await response.json();
         const portfolio_item: PortfolioItem[] = data
-        console.log("portfolio_item: ", portfolio_item)
+        // console.log("portfolio_item: ", portfolio_item)
         return portfolio_item
     } catch (error) {
         console.error('Fetching error:', error);

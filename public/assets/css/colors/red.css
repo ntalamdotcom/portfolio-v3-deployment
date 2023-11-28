@@ -194,3 +194,13 @@
     background-color: #961616;
   }
 }
+/* Disabled portfolio filters*/
+.grid-item.col-md-4.col-sm-6.col-xs-12 {
+  position: relative !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+.portfolioContainer.row {
+  height: fit-content !important;
+}

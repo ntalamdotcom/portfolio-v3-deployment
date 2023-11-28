@@ -39,15 +39,20 @@ export default function PortfolioItem({
             }
         });
     });
+    var cat = categories
+    if (Array.isArray(categories)) {
+        cat = categories[0]
+    }
+
 
     return <>
         <div
-            className={"grid-item col-md-4 col-sm-6 col-xs-12 " + categories}>
+            className={"grid-item col-md-4 col-sm-6 col-xs-12 " + cat}>
             <figure>
                 <Button
                     onClick={() => {
                         setModalTitle(title)
-                        setModalDescription(description)
+                        setModalDescription(description || subTitle)
                         setModalLinkToProject(linkToProject)
                         setModalImage(imagePath)
                         setModalTechIcons(itemsList);
